@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <script src="all.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        img {
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .profile-user-img {
+            border: 3px solid #adb5bd;
+            margin: 0 auto;
+            padding: 3px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .img-circle {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body style="background-color: #e7e4d2;">
+    <header class="d-flex flex-wrap justify-content-between bg-light py-3 px-2 mb-4 border-bottom">
+        <div>
+            <a href="#"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img class="bi me-2 p-0" src="favicon.png" alt="" width="42" height="42" style="border-radius: 15px;">
+                <span class="fs-4" style="color: #a67e62;">Laço Certo</span>
+            </a>
+        </div>
+
+        <div>
+            <ul class="nav nav-pills">
+                <!-- <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li> -->
+                <li class="nav-item"><a href="index.html" class="nav-link bg-danger text-white">Sair</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-primary card-outline mt-5">
+                    <div class="card-body box-profile">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <img class="profile-user-img img-fluid img-circle" src="images/Vinicius.png"
+                                        alt="User profile picture">
+                                </div>
+                                <h3 class="profile-username text-center"> Vinicius Golo</h3>
+                                <p class="text-muted text-center">Engenheiro de software</p>
+
+                            </div>
+
+                            <div class="col-md-4 text-center p-5">
+                                <img src="images/contratato.png" alt="handshek" height='170'>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <img class="profile-user-img img-fluid img-circle" src="favicon.png"
+                                        alt="User profile picture">
+                                </div>
+                                <h3 class="profile-username text-center">O laço</h3>
+                                <p class="text-muted text-center"><b>Localização:</b><br>Av. da produção N° 123</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <script>
+        function setEnviado(param) {
+            document.getElementById(param).innerHTML = "Enviado!";
+            document.getElementById(param).disabled = true;
+        }
+    </script>
+</body>
+
+</html>

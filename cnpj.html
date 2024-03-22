@@ -48,7 +48,7 @@
             <a href="#"
                 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <img class="bi me-2 p-0" src="favicon.png" alt="" width="42" height="42" style="border-radius: 15px;">
-                <span class="fs-4" style="color: #a67e62;">[Nome do projeto]</span>
+                <span class="fs-4" style="color: #a67e62;">Laço Certo</span>
             </a>
         </div>
 
@@ -71,6 +71,22 @@
                         </div>
                         <h3 class="profile-username text-center">O laço</h3>
                         <p class="text-muted text-center"><b>Localização:</b><br>Av. da produção N° 123</p>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Combinações</h5>
+                        <div class="" style="display: flex; justify-content: space-evenly;">
+                            <a href="combcnpj.html" class="btn btn-success" style="    width: -webkit-fill-available;">
+                               <h1>
+                                <i class="fa fa-bell"></i>
+                            
+                                2
+                               </h1>
+                               
+                            </a>
+                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,9 +118,9 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <button class="btn btn-primary btn-block"
+                                <button id="bt1" onclick="setEnviado('bt1')" class="btn btn-primary btn-block"
                                     style="border: none; background-color: #82a895;">
-                                    Enviar currículo
+                                    Interesse!
                                 </button>
                             </div>
                         </div>
@@ -114,6 +130,12 @@
             </div>
         </div>
     </div>
+    <script>
+        function setEnviado(param) {
+             document.getElementById(param).innerHTML = "Enviado!";
+             document.getElementById(param).disabled = true;
+         }
+     </script>
 </body>
 
 </html>
