@@ -32,10 +32,12 @@
             margin: 0 auto;
             padding: 3px;
             width: 100px;
+            height: 100px;
         }
 
         .img-circle {
             border-radius: 50%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -64,35 +66,54 @@
                 <div class="card card-primary card-outline mb-2">
                     <div class="card-body box-profile">
                         <div class="text-center">
-                            <img class="profile-user-img img-fluid img-circle" src="images/husky2.jpg"
+                            <img class="profile-user-img img-fluid img-circle" src="images/Vinicius.png"
                                 alt="User profile picture">
+                            
                         </div>
-                        <h3 class="profile-username text-center">Fulano de Tal asdasd</h3>
+                        <h3 class="profile-username text-center"> Vinicius Golo</h3>
                         <p class="text-muted text-center">Engenheiro de software</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Combinações</h5>
+                        <div class="" style="display: flex; justify-content: space-evenly;">
+                            <a class="btn btn-success" style="    width: -webkit-fill-available;">
+                               <h1>
+                                <i class="fa fa-bell"></i>
+                            
+                                2
+                               </h1>
+                               
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-2">
                     <div class="card-body">
                         <h5 class="card-title">Aprimore seu currículo</h5>
                         <div class="" style="display: flex; justify-content: space-evenly;">
                             <a class="btn btn-primary">
-                                <i class="fas fa-th-list"></i>
+                                <i class="fa fa-play"></i>
                                 <br>
-                                Excel básico
+                                Excel basico
                             </a>
                             <a class="btn btn-primary">
-                                <i class="fas fa-file"></i>
+                                <i class="fa fa-play"></i>
                                 <br>
-                                Word do 0
+                                Word basico
                             </a>
                             <a class="btn btn-primary">
-                                <i class="fas fa-code"></i>
+                                <i class="fa fa-play"></i>
                                 <br>
-                                Java do 0
+                                Java basico
                             </a>
                         </div>
                     </div>
                 </div>
+
+                
             </div>
             <div class="col-md-8">
                 <div class="card">
@@ -115,7 +136,7 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <button class="btn btn-primary btn-block"
+                                <button id="bt1" onclick="setEnviado('bt1')" class="btn btn-primary btn-block"
                                     style="border: none; background-color: #82a895;">
                                     Enviar currículo
                                 </button>
@@ -138,7 +159,7 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <button class="btn btn-primary btn-block"
+                                <button id="bt2" onclick="setEnviado('bt2')" class="btn btn-primary btn-block"
                                     style="border: none; background-color: #82a895;">
                                     Enviar currículo
                                 </button>
@@ -150,6 +171,12 @@
             </div>
         </div>
     </div>
+    <script>
+       function setEnviado(param) {
+            document.getElementById(param).innerHTML = "Enviado!";
+            document.getElementById(param).disabled = true;
+        }
+    </script>
 </body>
 
 </html>
